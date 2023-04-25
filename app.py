@@ -1,6 +1,7 @@
 import os
 import openai
 import re
+import readline
 
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -30,8 +31,8 @@ while True:
         while True:
             user_input = input(">> ")
             if i == user_input:
-                print("succeeded!!\n")
+                print("Succeeded!!\n")
                 break
             else:
-                print("\ndoes not match!! Type again!!: {}".format(i))
+                print("\nDoes not match!! Type again!!: {}".format(i))
 
